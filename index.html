@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Friends by Joatmon</title>
+    <link href="./static/css.css" type="text/css" rel="stylesheet" >
+    <style type="text/css">
+        body{
+            /* background-color: red; */
+            background-image: url('img/bg.png');
+            background-repeat: no-repeat;
+            background-position: 500px 500px;
+            background-attachment: fixed;
+        }
+        #css> p {
+            color: red;
+        }
+        #table {
+            background-color: red;
+        }
+        #font {
+            font-family: Tahoma;
+            font-style: italic;
+            /* font-style: oblique; */
+            /* font-size: 100px; */
+            /* color: yellow; */
+            font-weight: bold;
+        }
+    #textFormat> h1 {
+        text-align: left;
+        letter-spacing: 10px;
+        word-spacing: 100px;
+        /* line-height: 1000px; */
+    }
+
+    #textFormat> h2 {
+        text-align: center;
+    }
+
+    #textFormat> h3 {
+        text-align: right;
+    }
+
+    #textFormat, h3, p {
+        text-align: justify;
+    }
+
+    #link{
+        color:red;
+    }
+    #link> a:hover{
+        color: green;
+    }
+
+    #link> a:visited{
+        color: gray;
+    }
+
+    #link> a:active{
+        color: orange;
+    }
+
+    #boxmodel {
+        border-style: solid; 
+        /* dashed, solid, inset outset  */
+        border-width: 10px;
+        border-color: orange;
+        border-radius: 10px;
+        border-left-color: green;
+        border-right-color: blue;
+        border-bottom-color: cyan;
+
+        /* border: 5px solid blue; shorthand  */
+
+
+        padding: 25px;
+        padding-left: 10px;
+        padding-bottom: 100px;
+
+    }
+
+    #parag>p {
+        border: 10px solid red;
+        margin: 20px;
+        padding: 10px;
+        padding-left:100px;
+        padding-top: 100px;
+    }
+
+    table {
+        border: 10px solid rgb(223, 19, 19);
+    }
+
+    /* #tablestyle > tr not working  */
+     tr{
+        background-color: orange;
+    }
+
+    th {
+        color: rgb(255, 255, 255);
+    }
+
+    td {
+        border: 5px solid green;
+    }
+
+     span {
+        color: red;
+        font-size: 40px;
+    }
+    
+    div{
+        background-color: lightgreen;
+    }
+
+ 
+/* 
+    #position {
+        position: fixed;
+        top: 100px;
+        left: 100px;
+    } */
+
+    
+    #relpos {
+        /* border: 5px solid red;
+        border-width: 100px; */
+        /* shift based on initial postion */
+        position: relative;
+        top: 1000px;
+        left: 100px;
+    }
+
+    #abspos {
+        /* shifts based on the 0,0 top leftmost  */
+        /* for embedded objects, they use the parent not 0,0 */
+        position: absolute;
+        top: 900px;
+        left: 100px;
+    }
+
+    #fixedpo {
+        position: fixed;
+        top: 100px;
+        left: 100px;
+    }
+
+    </style>
+  </head>
+  <body>
+    <header></header>
+    hello world
+    <h1>F.R.I.E.N.D.S</h1>
+    <h2>F.R.I.E.N.D.S</h2> 
+    <h3>F.R.I.E.N.D.S</h3>
+    <h4>F.R.I.E.N.D.S</h4>
+    <h5>F.R.I.E.N.D.S</h5>
+    <h6>F.R.I.E.N.D.S</h6>
+    <hr />
+
+    <img src="./img/pic1.png" alt="frineds" style="width:250px; height:250px"/>
+    
+    <p>For more info, check out this <a href="https://en.wikipedia.org/wiki/Friends">link</a></p>
+
+    <p>To another separate page <a href="./anotherPage.html">here</a></p>
+
+    <p>Go to paragraph section <a href="#paragraph">here</a></p>
+
+    <p>Go to a section but available on a different page <a href="anotherPage.html#endofpage">here</a></p>
+
+   
+    <!-- comment is this  -->
+
+    <p>Friends is an American TV Show</p>
+    <p>The show involves 6 frineds leaving in Manhathan</p>
+
+
+    <!-- format -->
+    <p><b>Friends</b> is an <i>American TV Show</i></p>
+
+    <p>All ten season's now at <strike>$100</strike> $10</p>
+
+    <p>The chemical formula of water is H<sub>2</sub>0</p>
+
+    <p>But that of calcium is Ca<sup>+2</sup></p>
+
+    <p><pre>Preserving white spaces          and font type and size let see</pre></p>
+
+    <p>To sections on this page </p>
+
+    <div id="paragraph">
+        <p>
+            Friends is an American TV Show. The show involves 6 frineds leaving in
+            Manhathan
+          </p>
+      
+          <p>
+              Friends is an American TV Show. </br>
+              The show involves 6 frineds leaving in
+              Manhathan
+          </p>
+    </div>
+    <div id="table">
+        <table border="1" cellpadding="10" cellspacing="10" width="50%">
+            <caption>List of Friends</caption>
+            <tr>
+                <th rowspan="8">Cast</th>
+            </tr>
+            <tr>
+                <th colspan="2">Names</th>
+            </tr>
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+            </tr>
+            <tr>
+                <td>Racheal</td>
+                <td>Green</td>
+            </tr>
+            <tr>
+                <td>Monica</td>
+                <td>Macela</td>
+            </tr>
+            <tr>
+                <td>Phoebe</td>
+                <td>Buffay</td>
+            </tr>
+            <tr>
+                <td>Chandler</td>
+                <td>Being</td>
+            </tr>
+            <tr>
+                <td>Tribian</td>
+                <td>rakela</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="list">
+        <!-- type A, a, I, i, 1,2  -->
+        <ol type="A">
+            <li>A</li>
+            <li>B</li>
+            <li>B+</li>
+            <li>C</li>
+            <li>D</li>
+        </ol>
+
+        <!-- circle, square, none,disc  -->
+        <ul type="circle">
+            <li>books</li>
+            <li>bags</li>
+            <li>pens</li>
+            <li>pencils</li>
+            <li>mango</li>
+        </ul>
+
+        <h1>Glosary</h1>
+        <dl>
+            <dt>Matter</dt>
+            <dd>Anything that has weight and can occupy space</dd>
+            <dt>Solid</dt>
+            <dd>Anything with a fix shape and size</dd>
+        </dl>
+
+        <uL>
+            <li>Math</li>
+            <li>English</li>
+            <li>Social</li>
+            <li>Programing</li>
+            <ol>
+                <li>C++</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>C</li>
+            </ol>
+        </uL>
+    </div>
+
+    <div id="iframe">
+        <!-- <iframe src="https://media.licdn.com/dms/image/C5603AQH3mlcwQe07nw/profile-displayphoto-shrink_800_800/0/1602681752372?e=1709164800&v=beta&t=O-pHKdpkA42MLrJL34sfaqRn1E3NEmmNZMBEwwFqegI" style="width:50%; height: auto;"> -->
+        </iframe>
+        <p></p>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/VOua_-NMQvA?si=6KpN1YDwV8sY1MBq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+    </div>
+    
+    <br id="forms">
+        <br method="POST" action="./" >
+            Name: <input type="text" name="umane" size="15"/> </br>
+            Password <input type="password" name="upass" maxlength="10"/> </br>
+            Gender <input  type="radio" name="gender" value="male"/>Male 
+                    <input type="radio" name="gender" value="female" />Female </br>
+            Courses <input type="checkbox" name="course" value="math" checked/>Math
+                    <input type="checkbox" name="course" value="english"/>English
+                    <input type="checkbox" name="course" value="social"/>Social </br>
+            Countries  <label for="countries">Select a Country:</label>
+            <Select>
+              <optgroup label="Africa">
+                <option>Algeria</option>
+                <option>Egypt</option>
+                <option>Kenya</option>
+                <option>Morocco</option>
+                <option>Nigeria</option>
+                <!-- Add more African countries as needed -->
+              </optgroup>
+          
+              <optgroup label="Asia">
+                <option value="china">China</option>
+                <option value="india">India</option>
+                <option value="japan">Japan</option>
+                <option value="south-korea">South Korea</option>
+                <option value="thailand">Thailand</option>
+                <!-- Add more Asian countries as needed -->
+              </optgroup>
+            </Select> </br>
+
+            Comment: <textarea name="comment" rows="10" cols="10"></textarea> </br>
+
+            <input type="submit" value="SUBMIT" /> 
+
+            <button>SUBMIT</button>
+
+            <input type="reset" value="RESET"/>
+
+
+    </form>
+</div>
+
+<div id="css">
+    <p>This should be red</p>
+</div>
+
+<div id="font">
+    <p id="font1">This is some text </p>
+    <p id="font2">This is some text </p>
+</div>
+
+<div id="textFormat">
+    <h1>Text formatting</h1>
+    <h2>Text Formating</h2>
+    <h3>Text Formating</h3>
+    <p>Text Formating ljioajof akjf lajf alfj dak fldajfl djaljflajfkajlfajl fa;lflk a;lkfj a;kjf da jkhkjklj jh klj hlk hlkj hlk hjllkj hk hl hlkhjl hl kh lh khl j  hlkjhlkhkjhlkj hlkjh lj lj hjk hlklkj hhkjhklhl;j
+        Text Formating ljioajof akjf lajf alfj dak fldajfl djaljflajfkajlfajl fa;lflk a;lkfj a;kjf da jkhkjklj jh klj hlk hlkj hlk hjllkj hk hl hlkhjl hl kh lh khl j  hlkjhlkhkjhlkj hlkjh lj lj hjk hlklkj hhkjhklhl;j Text Formating ljioajof akjf lajf alfj dak fldajfl djaljflajfkajlfajl fa;lflk a;lkfj a;kjf da jkhkjklj jh klj hlk hlkj hlk hjllkj hk hl hlkhjl hl kh lh khl j  hlkjhlkhkjhlkj hlkjh lj lj hjk hlklkj hhkjhklhl;j Text Formating ljioajof akjf lajf alfj dak fldajfl djaljflajfkajlfajl fa;lflk a;lkfj a;kjf da jkhkjklj jh klj hlk hlkj hlk hjllkj hk hl hlkhjl hl kh lh khl j  hlkjhlkhkjhlkj hlkjh lj lj hjk hlklkj hhkjhklhl;j Text Formating ljioajof akjf lajf alfj dak fldajfl djaljflajfkajlfajl fa;lflk a;lkfj a;kjf da jkhkjklj jh klj hlk hlkj hlk hjllkj hk hl hlkhjl hl kh lh khl j  hlkjhlkhkjhlkj hlkjh lj lj hjk hlklkj hhkjhklhl;j Text Formating ljioajof akjf lajf alfj dak fldajfl djaljflajfkajlfajl fa;lflk a;lkfj a;kjf da jkhkjklj jh klj hlk hlkj hlk hjllkj hk hl hlkhjl hl kh lh khl j  hlkjhlkhkjhlkj hlkjh lj lj hjk hlklkj hhkjhklhl;j Text Formating ljioajof akjf lajf alfj dak fldajfl djaljflajfkajlfajl fa;lflk a;lkfj a;kjf da jkhkjklj jh klj hlk hlkj hlk hjllkj hk hl hlkhjl hl kh lh khl j  hlkjhlkhkjhlkj hlkjh lj lj hjk hlklkj hhkjhklhl;j Text Formating ljioajof akjf lajf alfj dak fldajfl djaljflajfkajlfajl fa;lflk a;lkfj a;kjf da jkhkjklj jh klj hlk hlkj hlk hjllkj hk hl hlkhjl hl kh lh khl j  hlkjhlkhkjhlkj hlkjh lj lj hjk hlklkj hhkjhklhl;j Text Formating ljioajof akjf lajf alfj dak fldajfl djaljflajfkajlfajl fa;lflk a;lkfj a;kjf da jkhkjklj jh klj hlk hlkj hlk hjllkj hk hl hlkhjl hl kh lh khl j  hlkjhlkhkjhlkj hlkjh lj lj hjk hlklkj hhkjhklhl;j Text Formating ljioajof akjf lajf alfj dak fldajfl djaljflajfkajlfajl fa;lflk a;lkfj a;kjf da jkhkjklj jh klj hlk hlkj hlk hjllkj hk hl hlkhjl hl kh lh khl j  hlkjhlkhkjhlkj hlkjh lj lj hjk hlklkj hhkjhklhl;j Text Formating ljioajof akjf lajf alfj dak fldajfl djaljflajfkajlfajl fa;lflk a;lkfj a;kjf da jkhkjklj jh klj hlk hlkj hlk hjllkj hk hl hlkhjl hl kh lh khl j  hlkjhlkhkjhlkj hlkjh lj lj hjk hlklkj hhkjhklhl;j Text Formating ljioajof akjf lajf alfj dak fldajfl djaljflajfkajlfajl fa;lflk a;lkfj a;kjf da jkhkjklj jh klj hlk hlkj hlk hjllkj hk hl hlkhjl hl kh lh khl j  hlkjhlkhkjhlkj hlkjh lj lj hjk hlklkj hhkjhklhl;j Text Formating ljioajof akjf lajf alfj dak fldajfl djaljflajfkajlfajl fa;lflk a;lkfj a;kjf da jkhkjklj jh klj hlk hlkj hlk hjllkj hk hl hlkhjl hl kh lh khl j  hlkjhlkhkjhlkj hlkjh lj lj hjk hlklkj hhkjhklhl;j Text Formating ljioajof akjf lajf alfj dak fldajfl djaljflajfkajlfajl fa;lflk a;lkfj a;kjf da jkhkjklj jh klj hlk hlkj hlk hjllkj hk hl hlkhjl hl kh lh khl j  hlkjhlkhkjhlkj hlkjh lj lj hjk hlklkj hhkjhklhl;j Text Formating ljioajof akjf lajf alfj dak fldajfl djaljflajfkajlfajl fa;lflk a;lkfj a;kjf da jkhkjklj jh klj hlk hlkj hlk hjllkj hk hl hlkhjl hl kh lh khl j  hlkjhlkhkjhlkj hlkjh lj lj hjk hlklkj hhkjhklhl;j Text Formating ljioajof akjf lajf alfj dak fldajfl djaljflajfkajlfajl fa;lflk a;lkfj a;kjf da jkhkjklj jh klj hlk hlkj hlk hjllkj hk hl hlkhjl hl kh lh khl j  hlkjhlkhkjhlkj hlkjh lj lj hjk hlklkj hhkjhklhl;j </p>
+    <h5>Text Formating</h5>
+</div>
+
+<div id="link">
+    <a href="http://googl.com">Google</a>
+</div>
+
+<div id="boxmodel">
+    <p>BOX MODEL</p>
+</div>
+
+<div id="parag">
+
+    <p>para 1</p>
+    <p>para 1</p>
+    <p>para 1</p>
+    </div>
+
+    <div id="tablestyle">
+        <table>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+            </tr>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div id="spanS">
+        <p>This is s tutorial on <span>HTML</span> and<span>CSS</span> </p>
+    </div>
+
+    <div id="position">
+        <div id="relpos">
+            <p>relative position div</p>
+        </div>
+        <div id="abspos">
+            <p>absolute position div</p>
+        </div>
+        <div id="fixedpo">
+            <p>fixed postion div</p>
+        </div>
+    </div>
+
+    <div style="background-color: red; margin: 10px;">
+        <p>let see</p>
+        </div>
+
+  </body>
+</html>
